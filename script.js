@@ -70,3 +70,15 @@ function nextPage(){
         getUserData(currentPage+1);
     }
 }
+
+function firstPage(){
+    const fPage=1;
+    getUserData(fPage);
+
+}
+
+function lastPage(){
+    const totalPagesLast=userData.length/itemsPerPage;
+    getUserData(totalPagesLast);
+
+}
